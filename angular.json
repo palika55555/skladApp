@@ -5,14 +5,14 @@
   "projects": {
     "sklad-frontend": {
       "projectType": "application",
+      "root": "",
+      "sourceRoot": "src",
+      "prefix": "app",
       "schematics": {
         "@schematics/angular:component": {
           "style": "scss"
         }
       },
-      "root": "",
-      "sourceRoot": "src",
-      "prefix": "app",
       "architect": {
         "build": {
           "builder": "@angular/build:application",
@@ -27,7 +27,6 @@
               {
                 "glob": "**/*",
                 "input": "public"
-
               },
               "src/assets"
             ],
@@ -96,5 +95,6 @@
         }
       }
     }
-  }
+  },
+  "defaultProject": "sklad-frontend"
 }
